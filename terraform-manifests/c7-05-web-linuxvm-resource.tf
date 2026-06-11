@@ -25,7 +25,6 @@ resource "azurerm_linux_virtual_machine" "web_linuxvm" {
   resource_group_name = azurerm_resource_group.rg.name
   location = azurerm_resource_group.rg.location 
   size = var.web_linuxvm_size
-  admin_username = var.web_linuxvm_admin_user
   network_interface_ids = [ azurerm_network_interface.web_linuxvm_nic.id ]
   admin_username                  = var.web_linuxvm_admin_user
   admin_password                  = "Welcome@123&*()"
