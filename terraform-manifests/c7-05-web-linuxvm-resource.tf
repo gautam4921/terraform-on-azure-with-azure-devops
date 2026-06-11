@@ -27,10 +27,9 @@ resource "azurerm_linux_virtual_machine" "web_linuxvm" {
   size = var.web_linuxvm_size
   admin_username = var.web_linuxvm_admin_user
   network_interface_ids = [ azurerm_network_interface.web_linuxvm_nic.id ]
-  admin_ssh_key {
-    username = var.web_linuxvm_admin_user
-    public_key = file("${path.module}/ssh-keys/terraform-azure.pub")
-  }
+  admin_username                  = "azureuser"
+  admin_password                  = "Welcome@123&*()"
+  disable_password_authentication = false
   os_disk {
     caching = "ReadWrite"
     storage_account_type = "Standard_LRS"
