@@ -16,7 +16,7 @@ output "web_linuxvm_network_interface_private_ip_addresses" {
   value = [azurerm_network_interface.web_linuxvm_nic.private_ip_addresses]
 }
 
-# Linux VM Outputs
+
 
 ## Virtual Machine Public IP
 output "web_linuxvm_public_ip_address" {
