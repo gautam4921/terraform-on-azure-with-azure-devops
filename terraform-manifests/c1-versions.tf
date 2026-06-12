@@ -14,6 +14,10 @@ terraform {
 
   # Terraform State Storage to Azure Storage Container (Values will be taken from Azure DevOps)
   backend "azurerm" {
+    resource_group_name  = "terraform-storage-rg"
+    storage_account_name = "terraformstate11062026"
+    container_name       = "terraformtfstate2026"
+    key                  = "dev-terraform.tfstate"
   }
 }
 
