@@ -18,5 +18,5 @@ bastion_subnet_name = "bastionsubnet"
 bastion_subnet_address = ["10.2.100.0/24"]
 
 # Web Linux VM Variables
-web_linuxvm_size = "Standard B2as v2"
+web_linuxvm_size = "Standard_B2as_v2"
 web_linuxvm_admin_user = "azureuser"
