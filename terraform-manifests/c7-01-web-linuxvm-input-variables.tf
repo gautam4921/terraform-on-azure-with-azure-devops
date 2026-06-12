@@ -2,7 +2,7 @@
 variable "web_linuxvm_size" {
   description = "Web Linux VM Size"
   type = string 
-  default = "Standard B2as v2"
+  default = "Standard_B2as_v2"
 }
 
 variable "web_linuxvm_admin_user" {
