@@ -33,3 +33,4 @@ provider "azurerm" {
 }
 
 # sample test 
+# qa ,stage and prod env added in cd pipeline after dev sucessful.
